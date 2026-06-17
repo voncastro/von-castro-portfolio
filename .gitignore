@@ -1,0 +1,9 @@
+node_modules
+dist
+tmp
+.claude
+.DS_Store
+*.local
+.vite
+.codex-*
+codex-portfolio-handoff.md
