@@ -29,7 +29,7 @@ The project is configured for Vercel with:
 The expected production URL is:
 
 ```text
-https://von-castro-portfolio.vercel.app/
+https://voncastro.vercel.app/
 ```
 
 If Vercel assigns a different production domain, update the canonical, `og:url`, `og:image`, and `twitter:image` values in `index.html`.
