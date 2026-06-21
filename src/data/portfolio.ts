@@ -279,7 +279,6 @@ export const projects: Project[] = [
     ],
     links: [
       { label: "Landing page", href: "https://setlio.vercel.app/" },
-      { label: "Private walkthrough available" },
       { label: "GitHub profile", href: "https://github.com/voncastro" },
     ],
     tags: ["Flutter", "Dart", "Drift SQLite", "Supabase", "Wear OS", "Android services", "PowerShell tooling"],
