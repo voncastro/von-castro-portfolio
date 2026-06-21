@@ -126,7 +126,7 @@ export const proofHighlights: ProofHighlight[] = [
   },
   {
     label: "Shipped product",
-    value: "dvup Settle Up CSV import built end to end: Postgres migration, validation, and ledger correctness fixes",
+    value: "dvup Settle Up CSV import review, validation, and launch-stage fixes",
   },
   {
     label: "Systems depth",
@@ -221,7 +221,7 @@ export const projects: Project[] = [
     },
     impact: [
       { label: "Problem", value: "People needed a safe way to bring existing Settle Up history into a live money app." },
-      { label: "What I shipped", value: "Built the CSV import end to end: Postgres migration, server-side validation, multi-step Flutter UI, and ledger correctness fixes." },
+      { label: "What I shipped", value: "Scoped, reviewed, and validated the CSV import plus launch-stage correctness fixes." },
       { label: "Technical depth", value: "Flutter UI, Supabase/Postgres migrations, server-side validation, currency and timezone edges." },
       { label: "Proof", value: "Merged product work on a launched app: CSV import review, validation, and launch-stage correctness fixes." },
     ],
@@ -344,7 +344,6 @@ export const qualityChecks: QualityCheck[] = [
 export const about: string[] = [
   "I'm a software engineer in Edmonton. Most days that means sitting in front of a computer building things with code, then finding some small product friction in real life and bringing it back to the keyboard.",
   "The part that delights me is when scattered tasks from different places finally come together and just work. My first instinct is usually too many ideas, so I try to trim problems down until the core behavior is obvious enough to test.",
-  "Between graduation and early 2026, I stepped away from professional engineering. Our second child was born prematurely and spent two weeks in the NICU; shortly after, I went through a health episode of my own that took several months to diagnose and stabilize. During the recovery I kept up with Flutter and cross-platform development through Coursera, then came back to product work in early 2026.",
   "Setlio came from my own training: almost three years in, five days a week, and just enough friction in existing fitness loggers that I wanted something shaped around my sessions. It is also my sandbox for offline sync, Wear OS, mutation testing, and AI-assisted engineering workflows.",
   "I use Codex and Claude every day, but generated code is not a free pass. I scope the work, read the diffs, run the checks, and only keep changes I can explain.",
   "Outside code, I lift to eat and eat to lift; most weeks include a new recipe I found online and a healthier version I did not expect to like as much as I did.",
@@ -368,8 +367,8 @@ export const skillGroups: SkillGroup[] = [
     values: ["Git", "GitHub", "Android Studio", "PowerShell", "Gradle", "Sentry"],
   },
   {
-    label: "Workflow",
-    values: ["Written specs", "Scripted pre-merge checks", "Claude Code", "OpenAI Codex"],
+    label: "AI-assisted workflow",
+    values: ["Claude Code", "OpenAI Codex", "Written specs", "Scripted pre-merge checks"],
   },
 ];
 
