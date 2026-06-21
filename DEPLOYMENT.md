@@ -17,7 +17,7 @@
 The site metadata currently assumes:
 
 ```text
-https://von-castro-portfolio.vercel.app/
+https://voncastro.vercel.app/
 ```
 
 If the final Vercel domain differs, update `index.html` before sharing the site widely.

@@ -223,11 +223,10 @@ export const projects: Project[] = [
       { label: "Problem", value: "People needed a safe way to bring existing Settle Up history into a live money app." },
       { label: "What I shipped", value: "Scoped, reviewed, and validated the CSV import plus launch-stage correctness fixes." },
       { label: "Technical depth", value: "Flutter UI, Supabase/Postgres migrations, server-side validation, currency and timezone edges." },
-      { label: "Proof", value: "Merged product work on a launched app; import-flow screenshots pending private capture." },
+      { label: "Proof", value: "Merged product work on a launched app: CSV import review, validation, and launch-stage correctness fixes." },
     ],
     links: [
       { label: "Live product", href: "https://dvup.ca/" },
-      { label: "Demo available on request" },
     ],
     tags: ["Flutter", "Dart", "Supabase", "PostgreSQL", "Provider", "Multi-currency math", "IANA timezones"],
     hook: "I stepped into a newly launched startup product and shipped work where correctness mattered down to the cent.",
@@ -248,23 +247,21 @@ export const projects: Project[] = [
         "Verification focused on totals that balance to the cent after rounding, settlement dates that survive timezone conversion, and ambiguous rows being rejected before they can touch anyone's balance.",
       ],
     },
-    // TODO(von): replace at least two of these marketing shots with captures of the
-    // CSV import preview / validation flow you built - that is the strongest proof on the page.
     media: [
       {
         src: "/assets/dvup-official-itemized-splits.webp",
         alt: "Official dvup product shot showing itemized receipt splits.",
-        caption: "Official product shot: itemized splits",
+        caption: "Launched app context: itemized splits",
       },
       {
         src: "/assets/dvup-official-living-balances.webp",
         alt: "Official dvup product shot showing living balances and who owes whom.",
-        caption: "Official product shot: living balances",
+        caption: "Launched app context: living balances",
       },
       {
         src: "/assets/dvup-official-simplified-debts.webp",
         alt: "Official dvup product shot showing simplified debts after payment reduction.",
-        caption: "Official product shot: simplified debts",
+        caption: "Launched app context: simplified debts",
       },
     ],
   },
@@ -281,7 +278,7 @@ export const projects: Project[] = [
       { label: "Proof", value: "Current emulator screenshots plus 60+ local and CI quality-gate scripts." },
     ],
     links: [
-      { label: "Demo available on request" },
+      { label: "Private walkthrough available" },
       { label: "GitHub profile", href: "https://github.com/voncastro" },
     ],
     tags: ["Flutter", "Dart", "Drift SQLite", "Supabase", "Wear OS", "Android services", "PowerShell tooling"],
