@@ -278,6 +278,7 @@ export const projects: Project[] = [
       { label: "Proof", value: "Current emulator screenshots plus 60+ local and CI quality-gate scripts." },
     ],
     links: [
+      { label: "Landing page", href: "https://setlio.vercel.app/" },
       { label: "Private walkthrough available" },
       { label: "GitHub profile", href: "https://github.com/voncastro" },
     ],
