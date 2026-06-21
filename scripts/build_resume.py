@@ -65,8 +65,8 @@ story = [
     Spacer(1, 2),
     Paragraph(
         "Software Engineer &nbsp;|&nbsp; Edmonton, AB (open to remote/relocation) &nbsp;|&nbsp; "
-        "voncastro.dev@gmail.com &nbsp;|&nbsp; "
-        "linkedin.com/in/voncastro &nbsp;|&nbsp; github.com/voncastro &nbsp;|&nbsp; voncastro.vercel.app",
+        "castrov4@mymacewan.ca &nbsp;|&nbsp; "
+        "linkedin.com/in/voncastro &nbsp;|&nbsp; github.com/voncastro",
         contact_style,
     ),
     Spacer(1, 6),
@@ -123,7 +123,7 @@ story = [
             "Built workout tracking and analytics on Drift SQLite with Supabase sync: an outbound sync "
             "queue, crash recovery, and Android foreground-service lifecycle handling, plus a Wear OS "
             "companion for phone-free logging.",
-            "Maintains 60+ scripted PowerShell quality gates that run before every merge.",
+            "Maintains 30+ scripted PowerShell quality gates that run before every merge.",
         ]
     ),
     Paragraph("SKILLS", section_style),
