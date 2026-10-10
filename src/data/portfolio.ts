@@ -14,7 +14,7 @@ export type Experience = {
   role: string;
   dates: string;
   context: string;
-  url: string;
+  url?: string;
   logo: LogoAsset;
   bullets: string[];
   tags: string[];
@@ -118,7 +118,6 @@ export const experiences: Experience[] = [
     role: "Frontend Developer Intern",
     dates: "Sep 2021 — Dec 2021",
     context: "Early-stage health-tracking startup",
-    url: "https://www.cassidye-care.com",
     logo: {
       src: "/assets/logo-cassidy-ecare.png",
       alt: "Cassidy eCare logo",

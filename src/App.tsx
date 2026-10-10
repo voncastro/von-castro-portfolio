@@ -220,10 +220,16 @@ function ExperienceEntry({ experience }: { experience: Experience }) {
       <p className="entry-dates">{experience.dates}</p>
       <div className="entry-body">
         <h3>
-          <a href={experience.url} target="_blank" rel="noreferrer">
-            {experience.role} · {experience.company}
-            <ArrowUpRight aria-hidden="true" size={15} />
-          </a>
+          {experience.url ? (
+            <a href={experience.url} target="_blank" rel="noreferrer">
+              {experience.role} · {experience.company}
+              <ArrowUpRight aria-hidden="true" size={15} />
+            </a>
+          ) : (
+            <span>
+              {experience.role} · {experience.company}
+            </span>
+          )}
         </h3>
         <p className="entry-context">{experience.context}</p>
         <ul className="entry-bullets">
