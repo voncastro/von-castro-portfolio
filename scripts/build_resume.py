@@ -1,5 +1,9 @@
 """Builds public/Von-Castro-Resume.pdf from the same facts as the site copy.
 
+NOTE (Oct 2026): public/Von-Castro-Resume.pdf is currently a manually
+maintained resume supplied by Von (richer layout than this script produces).
+Do NOT re-run this script unless you intend to overwrite that file.
+
 Re-run after editing:  python scripts/build_resume.py
 """
 
