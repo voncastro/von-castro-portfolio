@@ -265,10 +265,10 @@ export const workflowOutro =
 /* ------------------------------------------------------------------ */
 
 export const about: string[] = [
-  "I'm a software engineer in Edmonton. The part of the job that delights me is when scattered details from different places finally come together and just work — a ledger that balances, a sync queue that survives a dead battery.",
-  "Between graduation and early 2026, I stepped away from professional engineering for family reasons. Through that stretch I kept studying Flutter and cross-platform development, and came back in 2026 building more than I ever have.",
-  "Setlio comes from my own training — three years in, five days a week — and just enough friction in existing loggers that I built the one I wanted. It's also my proving ground for offline sync, Wear OS, and AI-native engineering discipline.",
-  "Outside code: I lift to eat and eat to lift. Most weeks include a new recipe and a healthier version of it I didn't expect to like.",
+  "My favorite moment in software is an unglamorous one: the instant a system reconciles. A file of timezone-mangled expense history that imports balanced to the cent. A watch and a phone that agree, to the second, about which set you're on — after a dead battery and a lost connection. I build for that moment, and I test for everything that threatens it.",
+  "My path has a gap, and I'd rather name it than hide it. After graduating I stepped away from professional engineering for family reasons. I never stopped studying — Flutter, cross-platform, whatever kept my hands moving — and when I came back in early 2026, I came back hungry. The months since are the most productive of my life: two products, 3,500+ tests, and a four-move system for shipping solo at production rigor.",
+  "Setlio exists because I train five days a week and kept hitting the same friction in every logger I tried. So I built the one I wanted — and became its harshest user. It logs my training every week, which means every sync bug and dead-battery edge case gets found by the person most motivated to fix it.",
+  "Away from the keyboard: I lift to eat and eat to lift. Most weeks there's a new recipe on the counter, and a healthier remake of it I didn't expect to prefer.",
 ];
 
 /* ------------------------------------------------------------------ */
