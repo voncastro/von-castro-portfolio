@@ -65,41 +65,71 @@ story = [
     Spacer(1, 2),
     Paragraph(
         "Software Engineer &nbsp;|&nbsp; Edmonton, AB (open to remote/relocation) &nbsp;|&nbsp; "
-        "castrov4@mymacewan.ca &nbsp;|&nbsp; "
-        "linkedin.com/in/voncastro &nbsp;|&nbsp; github.com/voncastro",
+        "voncastro.dev@gmail.com &nbsp;|&nbsp; "
+        "linkedin.com/in/voncastro &nbsp;|&nbsp; github.com/voncastro &nbsp;|&nbsp; voncastro.vercel.app",
         contact_style,
     ),
     Spacer(1, 6),
     Paragraph(
-        "Early-career software engineer with a 12-month Intuit internship and shipped product work "
-        "across Flutter, React, Supabase, and offline-first mobile systems.",
+        "Software engineer shipping production Flutter + Supabase product work through AI-agent "
+        "workflows — 900+ merged PRs in the last seven months as solo architect of Setlio and "
+        "contributor to a launched expense app — with a 12-month Intuit platform internship behind it.",
         plain_style,
+    ),
+    Paragraph("EDUCATION", section_style),
+    rule(),
+    Paragraph(
+        "MacEwan University — BSc Computer Science, Minor in Business Studies "
+        "<font color='#3d423d'>(Edmonton, AB · Graduated Nov 2023)</font>",
+        role_style,
     ),
     Paragraph("EXPERIENCE", section_style),
     rule(),
     Paragraph("Software Developer Intern — Intuit <font color='#3d423d'>(Jan 2022 – Dec 2022)</font>", role_style),
     *bullets(
         [
-            "Investigated server-side rendering for a multi-plugin page platform; measured load-time "
-            "improvements of roughly 50% on tested plugins and documented the compatibility blockers a "
-            "wider rollout would need to clear.",
-            "Built a plugin-health dashboard adopted across the org as the shared view of plugin status, "
-            "ownership, and real-time health; recognized twice by org leadership.",
-            "Built an automated on-call handoff tool during a company-wide hackathon, replacing the manual "
-            "context gathering engineers did before each shift.",
+            "Led a server-side rendering performance investigation across a multi-plugin page "
+            "architecture — measured up to 50% load-time improvement on targeted plugins and surfaced "
+            "the compatibility blockers for general rollout.",
+            "Built and shipped an automated on-call handoff system at a company-wide hackathon — "
+            "eliminated the manual context-gathering engineers did before every shift; adopted in "
+            "production by a 12-engineer team.",
+            "Shipped a plugin-health dashboard adopted org-wide as the centralized source for plugin "
+            "status, ownership, and health; earned two org-wide recognition awards, including one for "
+            "related cross-team analytics-pipeline work.",
         ]
     ),
     Paragraph("Frontend Developer Intern — Cassidy eCare <font color='#3d423d'>(Sep 2021 – Dec 2021)</font>", role_style),
     *bullets(
         [
-            "Owned the React/Redux web frontend of an early-stage health-tracking MVP, from component "
-            "structure through API integration, reporting directly to the founder.",
-            "Wrote architecture and onboarding documentation so new contributors could understand the "
-            "system quickly enough to ship.",
+            "Reported directly to the founder; translated product requirements into shipped frontend "
+            "features as the early MVP evolved.",
+            "Built the React + Redux web frontend — owned component architecture, Redux store design, "
+            "and backend API integration.",
+            "Wrote the project's onboarding documentation (current state, architecture, near-term "
+            "direction) so new contributors could ship in their first week.",
         ]
     ),
     Paragraph("PROJECTS", section_style),
     rule(),
+    Paragraph(
+        "Setlio — Solo Developer "
+        "<font color='#3d423d'>(Apr 2026 – Present · offline-first Flutter fitness tracker with Wear OS companion)</font>",
+        role_style,
+    ),
+    *bullets(
+        [
+            "Built and ship Setlio solo — workout logging, reusable templates, calendar planning, "
+            "stats, and local-first sync (Drift SQLite + Supabase): 1,209 commits across 907 "
+            "self-merged PRs, used daily since April 2026.",
+            "Engineered the hard parts at production depth — Wear OS phone-free tracking with "
+            "foreground-service lifecycle, a conflict-safe outbound sync queue, mid-workout crash "
+            "recovery, and GDPR-compliant account deletion with data-export archive.",
+            "Built the engineering team into the repo: formal SPEC / standards / domain-expert "
+            "contracts plus a 449-script PowerShell toolkit with 76 automated check gates (doc drift, "
+            "architecture health, coverage floors, Wear sync) run locally and in CI before every merge.",
+        ]
+    ),
     Paragraph(
         "dvup — Volunteer Contributor, Nolstar Studio "
         "<font color='#3d423d'>(Mar 2026 – Present · expense-splitting app, live on the App Store and Google Play)</font>",
@@ -107,23 +137,13 @@ story = [
     ),
     *bullets(
         [
-            "Shipped a Settle Up CSV import end to end: Postgres migration, server-side validation, a "
-            "multi-step Flutter flow, cross-currency confirmation, timezone-aware settlement dates, and "
-            "split rounding that balances to the cent.",
-            "Fixed multi-currency ledger correctness issues on the launched product.",
-        ]
-    ),
-    Paragraph(
-        "Setlio — Solo Developer "
-        "<font color='#3d423d'>(Apr 2026 – Present · offline-first Flutter fitness tracker with a Wear OS companion)</font>",
-        role_style,
-    ),
-    *bullets(
-        [
-            "Built workout tracking and analytics on Drift SQLite with Supabase sync: an outbound sync "
-            "queue, crash recovery, and Android foreground-service lifecycle handling, plus a Wear OS "
-            "companion for phone-free logging.",
-            "Maintains 30+ scripted PowerShell quality gates that run before every merge.",
+            "Shipped an end-to-end Settle Up CSV import on the launched app: Postgres RPC migration, "
+            "server-side validation, a multi-step Flutter flow, cross-currency confirmation, "
+            "timezone-aware settlement dates, and split rounding that balances to the cent.",
+            "Diagnosed and fixed multi-currency ledger correctness bugs — split-rounding bias, "
+            "currency-derivation mismatch on group creation, and settlement-date timezone drift.",
+            "Operated inside a 16-domain AI-agent workflow across 20+ tables and 40+ RPCs — scoped "
+            "small diffs, briefed agents against formal SPEC contracts, and owned every merge.",
         ]
     ),
     Paragraph("SKILLS", section_style),
@@ -131,19 +151,14 @@ story = [
     *[
         Paragraph(line, plain_style)
         for line in [
-            "<b>Languages:</b> Dart, JavaScript, TypeScript, SQL",
-            "<b>Frameworks:</b> Flutter, React, Redux, Wear OS, Provider",
-            "<b>Backend / DB:</b> Supabase, PostgreSQL, Edge Functions, Drift SQLite, Firebase",
-            "<b>Tools:</b> Git, Xcode, Android Studio, PowerShell, Gradle, Claude Code, OpenAI Codex",
+            "<b>Languages:</b> Dart, TypeScript, JavaScript, SQL, Kotlin, Python",
+            "<b>Frameworks:</b> Flutter, React, Redux, Riverpod, Provider",
+            "<b>Backend / DB:</b> Supabase, PostgreSQL, Edge Functions, Drift (SQLite), Firebase",
+            "<b>Tools:</b> Git, Xcode, Android Studio, PowerShell, Gradle, Sentry",
+            "<b>AI tooling:</b> Claude Code, OpenAI Codex, AI-native PR workflow "
+            "(formal SPEC contracts, doc-drift gates, autonomous quality passes)",
         ]
     ],
-    Paragraph("EDUCATION", section_style),
-    rule(),
-    Paragraph(
-        "MacEwan University — BSc Computer Science, Minor in Business Studies "
-        "<font color='#3d423d'>(2023)</font>",
-        role_style,
-    ),
 ]
 
 doc = SimpleDocTemplate(
