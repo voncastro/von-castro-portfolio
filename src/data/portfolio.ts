@@ -14,7 +14,7 @@ export type Experience = {
   role: string;
   dates: string;
   context: string;
-  url: string;
+  url?: string;
   logo: LogoAsset;
   bullets: string[];
   tags: string[];
@@ -71,9 +71,9 @@ export const profile = {
   // Positioning line: specific, verifiable, differentiating.
   tagline:
     "I build production-grade mobile and web product work — by running AI coding agents with the rigor of an engineering team.",
-  // Hero proof paragraph: numbers first, claims second.
+  // Hero proof paragraph: the four pillars — scale, recognition, startups, ownership.
   summary:
-    "In the last seven months I've shipped 900+ merged pull requests: an offline-first fitness platform with a Wear OS companion, built solo, and money-correctness features on a launched expense-splitting app. Before that: a year inside Intuit's QuickBooks platform org.",
+    "A year inside Intuit's QuickBooks platform org, shipping to 100M+ customers and earning org-wide recognition twice. Startup experience from both sides: a founder-led MVP and correctness work on a live money app. And Setlio — a full product, phone to watch to backend, built end to end, solo.",
   links: {
     email: "mailto:voncastro.dev@gmail.com",
     linkedin: "https://www.linkedin.com/in/voncastro/",
@@ -82,12 +82,12 @@ export const profile = {
   },
 };
 
-/* Headline stats — the von Restorff items. Each one is verifiable.    */
+/* Headline stats — the four pillars: scale, recognition, startups, ownership. */
 export const heroStats: Stat[] = [
-  { value: "907", label: "PRs merged on Setlio since April" },
-  { value: "1,209", label: "commits on Setlio's main branch" },
-  { value: "100M+", label: "customers served by Intuit, where I interned a year" },
-  { value: "2×", label: "org-wide recognition awards at Intuit" },
+  { value: "100M+", label: "customers on the Intuit platform my internship work shipped to" },
+  { value: "2×", label: "org-wide recognition awards for contributions at Intuit" },
+  { value: "0→1", label: "startup experience, from founder-led MVP to a live money app" },
+  { value: "Solo", label: "full product built end to end — phone, watch, and backend" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -118,7 +118,6 @@ export const experiences: Experience[] = [
     role: "Frontend Developer Intern",
     dates: "Sep 2021 — Dec 2021",
     context: "Early-stage health-tracking startup",
-    url: "https://www.cassidye-care.com",
     logo: {
       src: "/assets/logo-cassidy-ecare.png",
       alt: "Cassidy eCare logo",
@@ -144,41 +143,41 @@ export const projects: Project[] = [
     dates: "Apr 2026 — Present",
     status: "Pre-release · daily driver since day one",
     summary:
-      "Offline-first Flutter fitness tracker with a Wear OS companion — workout logging, reusable templates, calendar planning, stats, and local-first sync on Drift SQLite + Supabase.",
-    hook: "Built solo at production-team rigor: 1,209 commits across 907 self-merged PRs, every one through scripted quality gates.",
+      "Offline-first Flutter fitness tracker with a native Wear OS companion — workout logging, templates, calendar planning, stats, on-device ML label scanning, and local-first sync on encrypted Drift SQLite + Supabase.",
+    hook: "Built solo at production rigor: 3,500+ automated tests and 76 scripted gates stand in for the code-review team I don't have.",
     bullets: [
       "Engineered the parts fitness apps usually get wrong: Wear OS phone-free tracking with foreground-service lifecycle that survives battery-optimization kills, a conflict-safe outbound sync queue, mid-workout crash recovery, and timestamp-anchored rest timers.",
       "Shipped GDPR-grade account deletion with a grace period, data-export archive, and scheduled Supabase cleanup — the unglamorous work that makes an app releasable.",
       "Built the engineering team into the repo: formal SPEC / ENGINEERING_STANDARDS / DOMAIN_EXPERTS contracts and a 449-script PowerShell toolkit — 76 automated check gates covering doc drift, architecture health, coverage floors, and Wear sync — run locally and in CI before every merge.",
     ],
     stats: [
-      { value: "1,209", label: "commits on main" },
-      { value: "907", label: "self-merged PRs" },
-      { value: "449", label: "PowerShell tooling scripts" },
-      { value: "76", label: "automated check gates" },
+      { value: "3,500+", label: "automated tests: unit, widget, golden, integration" },
+      { value: "123", label: "golden screenshots guarding the UI" },
+      { value: "71", label: "schema migrations without losing a workout" },
+      { value: "76", label: "automated check gates before every merge" },
     ],
     links: [
       { label: "Landing page", href: "https://setlio.vercel.app/" },
       { label: "GitHub", href: "https://github.com/voncastro" },
     ],
-    tags: ["Flutter", "Dart", "Drift SQLite", "Supabase", "Wear OS", "Android foreground services", "PowerShell"],
+    tags: ["Flutter", "Dart", "Kotlin", "Drift SQLite", "Supabase", "Wear OS", "Google ML Kit", "Android foreground services"],
     media: [
       {
-        src: "/assets/setlio-emulator-workout-session.png",
-        alt: "Setlio phone emulator screen showing an active workout session with Wear OS connection, warm-up guidance, planned sets, and rest timing.",
-        caption: "Live workout session",
+        src: "/assets/setlio-phone-live-workout.png",
+        alt: "Setlio on a physical phone mid-workout: Push A session with set 2 of 15 logged, PR badges, RIR tracking, a live rest countdown, and the connected watch indicator.",
+        caption: "Physical phone: live session, rest running, watch connected",
         variant: "phone",
       },
       {
-        src: "/assets/setlio-current-dashboard.png",
-        alt: "Setlio dashboard screen showing weekly training readiness, calendar activity, and consistency.",
-        caption: "Training dashboard",
-        variant: "phone",
+        src: "/assets/setlio-watch-live-set.png",
+        alt: "Setlio on a physical Wear OS watch showing LIVE workout state: current exercise, elapsed time, set, weight, and reps, with a one-tap Done and rest button.",
+        caption: "Physical watch, LIVE: the whole set without touching the phone",
+        variant: "watch",
       },
       {
-        src: "/assets/setlio-emulator-wear-live-workout.png",
-        alt: "Setlio Wear OS emulator screen showing synced phone state, active workout time, current set, weight, reps, and rest status.",
-        caption: "Wear OS companion",
+        src: "/assets/setlio-watch-resting.png",
+        alt: "Setlio on a physical Wear OS watch in RESTING state: elapsed rest time, next set target, and a Stop rest button.",
+        caption: "Watch owns the rest: elapsed time and next set at a glance",
         variant: "watch",
       },
     ],
@@ -197,9 +196,9 @@ export const projects: Project[] = [
       "Worked inside the studio's 16-domain AI-agent system: scoped tickets into the smallest mergeable diff, briefed agents against 3,400+ lines of SPEC contracts, and owned every merge after reading every diff.",
     ],
     stats: [
-      { value: "49", label: "commits on the launched app" },
-      { value: "9+", label: "merged PRs" },
+      { value: "9+", label: "PRs accepted into a studio's live money app" },
       { value: "3", label: "ledger-correctness bugs found & fixed" },
+      { value: "$0.00", label: "tolerated drift — imports balance to the cent" },
     ],
     links: [{ label: "Live product", href: "https://dvup.ca/" }],
     logo: {
@@ -259,17 +258,17 @@ export const workflowMoves: WorkflowMove[] = [
 ];
 
 export const workflowOutro =
-  "The receipts: 907 self-merged PRs on Setlio behind 76 automated check gates, and production money code on dvup verified against formal spec contracts before every merge.";
+  "The receipts: 3,500+ automated tests and 76 check gates on Setlio, and production money code on dvup verified against formal spec contracts before every merge.";
 
 /* ------------------------------------------------------------------ */
 /* About — liking + honesty. Short paragraphs, real voice.             */
 /* ------------------------------------------------------------------ */
 
 export const about: string[] = [
-  "I'm a software engineer in Edmonton. The part of the job that delights me is when scattered details from different places finally come together and just work — a ledger that balances, a sync queue that survives a dead battery.",
-  "Between graduation and early 2026, I stepped away from professional engineering for family reasons. Through that stretch I kept studying Flutter and cross-platform development, and came back in 2026 building more than I ever have.",
-  "Setlio comes from my own training — three years in, five days a week — and just enough friction in existing loggers that I built the one I wanted. It's also my proving ground for offline sync, Wear OS, and AI-native engineering discipline.",
-  "Outside code: I lift to eat and eat to lift. Most weeks include a new recipe and a healthier version of it I didn't expect to like.",
+  "My favorite moment in software is an unglamorous one: the instant a system reconciles. A file of timezone-mangled expense history that imports balanced to the cent. A watch and a phone that agree, to the second, about which set you're on — after a dead battery and a lost connection. I build for that moment, and I test for everything that threatens it.",
+  "My path has a gap, and I'd rather name it than hide it. After graduating I stepped away from professional engineering for family reasons. I never stopped studying — Flutter, cross-platform, whatever kept my hands moving — and when I came back in early 2026, I came back hungry. The months since are the most productive of my life: two products, 3,500+ tests, and a four-move system for shipping solo at production rigor.",
+  "Setlio exists because I train five days a week and kept hitting the same friction in every logger I tried. So I built the one I wanted — and became its harshest user. It logs my training every week, which means every sync bug and dead-battery edge case gets found by the person most motivated to fix it.",
+  "Away from the keyboard: I lift to eat and eat to lift. Most weeks there's a new recipe on the counter, and a healthier remake of it I didn't expect to prefer.",
 ];
 
 /* ------------------------------------------------------------------ */
